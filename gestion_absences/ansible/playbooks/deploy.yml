@@ -1,0 +1,14 @@
+---
+- name: Déploiement sur les serveurs de production
+  hosts: production
+  become: true
+  tasks:
+    - name: Installer nginx
+      apt:
+        name: nginx
+        state: present
+    - name: Démarrer nginx
+      service:
+        name: nginx
+        state: started
+        enabled: true

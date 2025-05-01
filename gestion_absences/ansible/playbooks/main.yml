@@ -1,0 +1,5 @@
+---
+# Exemple de tâche fictive
+- name: Print message from common role
+  debug:
+    msg: "Rôle common exécuté avec succès"
