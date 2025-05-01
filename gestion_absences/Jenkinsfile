@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'git@github.com:HOUDA1807/gestion_absences.git'
+                git 'git@github.com:HOUDA1807/projet-pipeline.git'
             }
         }
         stage('Deploy') {
